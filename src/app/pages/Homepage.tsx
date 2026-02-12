@@ -56,7 +56,8 @@ export default function Homepage() {
         }
         subtitle="Use data to decide who gets credit, track every payment, and manage your business from your phone."
         ctaText="Download Free on Play Store"
-        onCtaClick={() => window.open('https://play.google.com/store', '_blank')}
+        onCtaClick={() => window.open('https://play.google.com/store/apps/details?id=app.verido.app', '_blank')}
+
       />
 
       {/* 2. STATS */}
@@ -898,7 +899,7 @@ export default function Homepage() {
             </p>
             
             <a 
-              href="https://play.google.com/store/apps/details?id=com.verido" 
+              href="https://play.google.com/store/apps/details?id=app.verido.app" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-gradient-to-r from-[#d4a574] to-[#c99a66] hover:from-[#c99a66] hover:to-[#b88f5c] text-white px-10 py-6 rounded-lg text-lg font-bold shadow-[0px_20px_25px_-5px_rgba(212,165,116,0.3),0px_8px_10px_-6px_rgba(212,165,116,0.2)] hover:shadow-[0px_25px_30px_-5px_rgba(212,165,116,0.4),0px_10px_15px_-6px_rgba(212,165,116,0.3)] transition-all duration-300"

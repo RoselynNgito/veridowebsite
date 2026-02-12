@@ -86,7 +86,7 @@ export default function Agribusiness() {
                 </a>
 
                 <a 
-                  href="https://play.google.com/store/apps/details?id=com.verido" 
+                  href="https://play.google.com/store/apps/details?id=app.verido.app"  
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-[rgba(255,255,255,0.1)] hover:bg-[rgba(255,255,255,0.15)] text-white px-6 py-4 rounded-lg text-base font-semibold border border-[rgba(255,255,255,0.2)] backdrop-blur-sm transition-all duration-300"
@@ -739,7 +739,7 @@ export default function Agribusiness() {
 
               {/* Secondary CTA - Download App (for existing customers) */}
               <a 
-                href="https://play.google.com/store/apps/details?id=com.verido" 
+                href="https://play.google.com/store/apps/details?id=app.verido.app"  
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-white hover:bg-gray-50 text-[#162F21] px-6 py-3 rounded-lg text-base font-semibold border-2 border-[#162F21] transition-all duration-300"
