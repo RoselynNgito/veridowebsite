@@ -15,10 +15,10 @@ import {
   ClockIcon,
   TargetIcon
 } from "../components/icons/SvgIcons";
-import imgImageVeridoMobileApp from "figma:asset/a8433f9d07848bbce11bec936986d3e94f9360a0.png";
-import imgImageVeridoWebDashboard from "figma:asset/c4b8f5c25343577c344dd185ded1bbf9d90c738d.png";
-import imgImageVeridoReportsDashboard from "figma:asset/3f5210083580e8bd52b5b4fdfa9813bffebe79d4.png";
-import imgVeridoLogo from "figma:asset/86b6fc0e0560e158897c31fb1abd4e929f4d3baa.png";
+import imgImageVeridoMobileApp from "../../assets/verido-mobile-app.png";
+import imgImageVeridoWebDashboard from "../../assets/verido-web-dashboard.png";
+import imgImageVeridoReportsDashboard from "../../assets/verido-reports-dashboard.png";
+import imgVeridoLogo from "../../assets/Verido_White_transparent.png";
 import svgPaths from "../../imports/svg-t88svzplsg";
 import svgPathsUsers from "../../imports/svg-4dv4lrjl5b";
 

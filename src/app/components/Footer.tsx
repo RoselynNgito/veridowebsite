@@ -1,6 +1,5 @@
 import { Link } from "react-router";
-import imgVeridoLogo from "figma:asset/86b6fc0e0560e158897c31fb1abd4e929f4d3baa.png";
-
+import imgVeridoLogo from "../../assets/Verido_White_transparent.png";
 export default function Footer() {
   return (
     <footer className="bg-[#162F21] text-white py-12">

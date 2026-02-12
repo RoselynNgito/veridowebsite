@@ -16,8 +16,8 @@ import {
   MailIcon,
   ClockIcon
 } from "../components/icons/SvgIcons";
-import imgImageVeridoMobileApp from "figma:asset/a8433f9d07848bbce11bec936986d3e94f9360a0.png";
-import imgImageVeridoWebDashboard from "figma:asset/c4b8f5c25343577c344dd185ded1bbf9d90c738d.png";
+import imgImageVeridoMobileApp from "../../assets/verido-mobile-app.png";
+import imgImageVeridoWebDashboard from "../../assets/verido-web-dashboard.png";
 import FiveScoringSystemsSection from "../components/FiveScoringSystemsSection";
 
 export default function Agribusiness() {

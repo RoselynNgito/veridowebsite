@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { ChevronDown, Menu, X, Store, Users, Building2 } from "lucide-react";
-import veridoLogo from "figma:asset/fee9f1fcf6fe87bd96225d369dbaaeeaa7ac616c.png";
+import veridoLogo from "../../assets/Verido_Green_transparent.png";
 
 const industries = [
   {
