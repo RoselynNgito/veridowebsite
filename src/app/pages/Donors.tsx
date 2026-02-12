@@ -15,9 +15,9 @@ import {
   ClockIcon,
   TargetIcon
 } from "../components/icons/SvgIcons";
-import imgImageVeridoMobileApp from "../../assets/verido-mobile-app.png";
-import imgImageVeridoWebDashboard from "../../assets/verido-web-dashboard.png";
-import imgImageVeridoReportsDashboard from "../../assets/verido-reports-dashboard.png";
+import imgImageVeridoMobileApp from "../../assets/verido_mobile_app.png";
+import imgImageVeridoWebDashboard from "../../assets/verido_web_dashboard.png";
+import imgImageVeridoReportsDashboard from "../../assets/verido_reports_dashboard.png";
 import imgVeridoLogo from "../../assets/Verido_White_transparent.png";
 import svgPaths from "../../imports/svg-t88svzplsg";
 import svgPathsUsers from "../../imports/svg-4dv4lrjl5b";
