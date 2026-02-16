@@ -1,0 +1,200 @@
+/**
+ * Mobile-first responsive adjustments
+ * Makes everything more compact and readable on mobile devices
+ */
+
+@layer base {
+  /* Mobile: Reduce section padding */
+  @media (max-width: 767px) {
+    section {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+    }
+    
+    /* Reduce heading sizes on mobile */
+    .text-4xl {
+      font-size: 1.75rem !important;
+      line-height: 2rem !important;
+    }
+    
+    .text-5xl {
+      font-size: 2rem !important;
+      line-height: 2.25rem !important;
+    }
+    
+    .text-6xl {
+      font-size: 2.25rem !important;
+      line-height: 2.5rem !important;
+    }
+    
+    /* Reduce body text */
+    .text-xl {
+      font-size: 1rem !important;
+      line-height: 1.5rem !important;
+    }
+    
+    .text-2xl {
+      font-size: 1.25rem !important;
+      line-height: 1.75rem !important;
+    }
+    
+    .text-3xl {
+      font-size: 1.5rem !important;
+      line-height: 2rem !important;
+    }
+    
+    .text-lg {
+      font-size: 0.9375rem !important;
+      line-height: 1.375rem !important;
+    }
+    
+    /* Reduce card padding */
+    .p-8 {
+      padding: 1.5rem !important;
+    }
+    
+    .p-10 {
+      padding: 1.75rem !important;
+    }
+    
+    .p-12 {
+      padding: 2rem !important;
+    }
+    
+    .p-6 {
+      padding: 1.25rem !important;
+    }
+    
+    /* Reduce gaps */
+    .gap-8 {
+      gap: 1.5rem !important;
+    }
+    
+    .gap-6 {
+      gap: 1rem !important;
+    }
+    
+    .gap-4 {
+      gap: 0.75rem !important;
+    }
+    
+    /* Reduce margins */
+    .mb-16 {
+      margin-bottom: 2.5rem !important;
+    }
+    
+    .mb-12 {
+      margin-bottom: 2rem !important;
+    }
+    
+    .mb-8 {
+      margin-bottom: 1.5rem !important;
+    }
+    
+    .mb-6 {
+      margin-bottom: 1rem !important;
+    }
+    
+    /* Reduce button sizes */
+    .px-12 {
+      padding-left: 2rem !important;
+      padding-right: 2rem !important;
+    }
+    
+    .py-7 {
+      padding-top: 1rem !important;
+      padding-bottom: 1rem !important;
+    }
+    
+    .px-10 {
+      padding-left: 1.75rem !important;
+      padding-right: 1.75rem !important;
+    }
+    
+    .py-6 {
+      padding-top: 0.875rem !important;
+      padding-bottom: 0.875rem !important;
+    }
+    
+    /* Ensure hero badge is visible and properly sized on mobile */
+    .hero-badge {
+      display: inline-flex !important;
+      padding: 0.75rem 1.25rem !important;
+      margin-bottom: 1.5rem !important;
+      max-width: 95% !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+    
+    .hero-badge span {
+      font-size: 0.75rem !important;
+      line-height: 1.25rem !important;
+      white-space: normal !important;
+      word-wrap: break-word !important;
+      text-align: center !important;
+    }
+    
+    /* Ensure proper text alignment on mobile */
+    .text-center {
+      text-align: center !important;
+    }
+    
+    /* Icon sizes on mobile */
+    .w-16.h-16 {
+      width: 3.5rem !important;
+      height: 3.5rem !important;
+    }
+    
+    .w-14.h-14 {
+      width: 3rem !important;
+      height: 3rem !important;
+    }
+    
+    .w-12.h-12 {
+      width: 2.5rem !important;
+      height: 2.5rem !important;
+    }
+  }
+  
+  /* Ensure all cards with flex items-start are properly aligned */
+  .flex.items-start {
+    align-items: flex-start !important;
+  }
+  
+  .flex.items-center {
+    align-items: center !important;
+  }
+  
+  .flex.justify-center {
+    justify-content: center !important;
+  }
+  
+  /* Ensure proper vertical alignment in card content */
+  .flex-col {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .flex-grow {
+    flex-grow: 1 !important;
+  }
+  
+  /* Ensure text doesn't overflow on mobile */
+  @media (max-width: 767px) {
+    h1, h2, h3, h4, h5, h6, p {
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+    }
+    
+    /* Add horizontal padding to prevent edge touching */
+    .max-w-7xl,
+    .max-w-6xl,
+    .max-w-5xl,
+    .max-w-4xl,
+    .max-w-3xl,
+    .max-w-2xl {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  }
+}
