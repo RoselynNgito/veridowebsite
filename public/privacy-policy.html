@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Verido</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #374151;
+      background: #ffffff;
+    }
+    
+    .header {
+      background: linear-gradient(135deg, #162F21 0%, #0a1810 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    
+    .header h1 {
+      font-size: 48px;
+      font-weight: 900;
+      margin-bottom: 16px;
+      color: white;
+    }
+    
+    .header p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.85);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    .summary-box {
+      background: white;
+      border-left: 4px solid #10b981;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 48px;
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .summary-box h2 {
+      font-size: 24px;
+      font-weight: 900;
+      color: #162F21;
+      margin-bottom: 24px;
+    }
+    
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+    
+    .summary-item {
+      display: flex;
+      gap: 12px;
+    }
+    
+    .summary-item strong {
+      color: #162F21;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 4px;
+    }
+    
+    .summary-item p {
+      font-size: 12px;
+      color: #6b7280;
+    }
+    
+    .content-section {
+      background: white;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 32px;
+      border: 1px solid #e5e7eb;
+    }
+    
+    .content-section h2 {
+      font-size: 28px;
+      font-weight: 900;
+      color: #162F21;
+      margin-bottom: 24px;
+    }
+    
+    .content-section h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #162F21;
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+    
+    .content-section p {
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+    
+    .content-section ul {
+      list-style: none;
+      margin-bottom: 16px;
+    }
+    
+    .content-section li {
+      padding-left: 28px;
+      margin-bottom: 8px;
+      position: relative;
+    }
+    
+    .content-section li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    
+    .alert-box {
+      background: #fef2f2;
+      border-left: 4px solid #dc2626;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 24px 0;
+    }
+    
+    .alert-box strong {
+      color: #dc2626;
+      display: block;
+      margin-bottom: 8px;
+    }
+    
+    .info-box {
+      background: #f0fdf4;
+      border: 2px solid #10b981;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    
+    .dark-section {
+      background: linear-gradient(135deg, #162F21 0%, #0a1810 100%);
+      color: white;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 32px;
+    }
+    
+    .dark-section h2 {
+      color: white;
+      margin-bottom: 24px;
+    }
+    
+    .dark-section p {
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+    
+    .grid-item {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 14px;
+    }
+    
+    .contact-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 24px;
+    }
+    
+    .contact-box a {
+      color: #d4a574;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+    
+    .back-button {
+      display: inline-block;
+      background: #162F21;
+      color: white;
+      padding: 12px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 32px 0;
+      transition: background 0.3s;
+    }
+    
+    .back-button:hover {
+      background: #0a1810;
+    }
+    
+    .footer {
+      background: #f9fafb;
+      padding: 32px 20px;
+      text-align: center;
+      margin-top: 64px;
+      border-top: 2px solid #e5e7eb;
+    }
+    
+    .footer p {
+      color: #6b7280;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Privacy Policy</h1>
+    <p>Your privacy matters. We're committed to protecting your data and being transparent about how we use it.</p>
+  </div>
+
+  <div class="container">
+    <a href="/" class="back-button">← Back to Home</a>
+
+    <!-- TL;DR Summary -->
+    <div class="summary-box">
+      <h2>TL;DR - The Quick Summary</h2>
+      <div class="summary-grid">
+        <div class="summary-item">
+          <div>
+            <strong>We Don't Sell Your Data</strong>
+            <p>Your information is never sold to third parties</p>
+          </div>
+        </div>
+        <div class="summary-item">
+          <div>
+            <strong>Bank-Level Encryption</strong>
+            <p>256-bit SSL/TLS encryption protects all data</p>
+          </div>
+        </div>
+        <div class="summary-item">
+          <div>
+            <strong>You Control Your Data</strong>
+            <p>Access, export, or delete your data anytime</p>
+          </div>
+        </div>
+        <div class="summary-item">
+          <div>
+            <strong>GDPR & CCPA Compliant</strong>
+            <p>We meet global privacy standards</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Introduction -->
+    <div class="content-section">
+      <h2>Introduction</h2>
+      <p>
+        At Verido ("we," "our," or "us"), we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application, website, and services (collectively, the "Services").
+      </p>
+      <p>
+        By accessing or using our Services, you agree to the terms of this Privacy Policy. If you do not agree with the terms, please do not access or use our Services.
+      </p>
+    </div>
+
+    <!-- 1. Information We Collect -->
+    <div class="content-section">
+      <h2>1. Information We Collect</h2>
+      
+      <h3>1.1 Personal Information</h3>
+      <p>We may collect personal information that you voluntarily provide when using our Services, including:</p>
+      <ul>
+        <li>Name, email address, phone number, and business contact details</li>
+        <li>Company name, job title, and professional information</li>
+        <li>Account credentials (username and encrypted password)</li>
+        <li>Payment and billing information (processed securely through third-party payment processors)</li>
+      </ul>
+
+      <h3>1.2 Business and Transaction Data</h3>
+      <p>When you use our risk assessment platform, we collect:</p>
+      <ul>
+        <li>Retailer and agent data (names, locations, transaction histories)</li>
+        <li>Distribution network information and geographic data</li>
+        <li>Financial transaction records and payment histories</li>
+        <li>Credit assessments and risk scoring data</li>
+      </ul>
+
+      <h3>1.3 Automatically Collected Information</h3>
+      <p>When you access our Services, we automatically collect:</p>
+      <ul>
+        <li>Device information (type, operating system, browser type, unique device identifiers)</li>
+        <li>IP address and general location data</li>
+        <li>Usage data (pages viewed, features accessed, time spent, click patterns)</li>
+      </ul>
+    </div>
+
+    <!-- 2. How We Use Your Information -->
+    <div class="content-section">
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the collected information for the following purposes:</p>
+      <div class="grid-2">
+        <div style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px;">
+          <strong>Service Delivery</strong>
+          <p style="margin: 0; font-size: 14px; color: #6b7280;">To provide, maintain, and improve our risk assessment platform</p>
+        </div>
+        <div style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px;">
+          <strong>Risk Analysis</strong>
+          <p style="margin: 0; font-size: 14px; color: #6b7280;">To generate credit scores and actionable insights</p>
+        </div>
+        <div style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px;">
+          <strong>Account Management</strong>
+          <p style="margin: 0; font-size: 14px; color: #6b7280;">To manage your account and process transactions</p>
+        </div>
+        <div style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px;">
+          <strong>Communication</strong>
+          <p style="margin: 0; font-size: 14px; color: #6b7280;">To send updates, security alerts, and respond to inquiries</p>
+        </div>
+        <div style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px;">
+          <strong>Analytics</strong>
+          <p style="margin: 0; font-size: 14px; color: #6b7280;">To analyze usage patterns and improve user experience</p>
+        </div>
+        <div style="background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px;">
+          <strong>Security</strong>
+          <p style="margin: 0; font-size: 14px; color: #6b7280;">To detect, prevent, and address fraud and security breaches</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. How We Share Your Information -->
+    <div class="content-section">
+      <h2>3. How We Share Your Information</h2>
+      
+      <div class="alert-box">
+        <strong>Important: We Do Not Sell Your Data</strong>
+        <p style="margin: 0; font-size: 14px;">We never sell your personal information to third parties. Your data is only shared in specific circumstances outlined below.</p>
+      </div>
+
+      <p>We may share your information in the following circumstances:</p>
+      <ul>
+        <li><strong>Service Providers:</strong> With third-party vendors who perform services on our behalf (cloud hosting, payment processing, analytics)</li>
+        <li><strong>Legal Requirements:</strong> When required by law, court order, or government regulation</li>
+        <li><strong>With Your Consent:</strong> When you explicitly authorize us to share information with specific third parties</li>
+      </ul>
+    </div>
+
+    <!-- 4. Data Security -->
+    <div class="dark-section">
+      <h2>4. Data Security</h2>
+      <p>We implement industry-standard security measures to protect your information:</p>
+      <div class="grid-2">
+        <div class="grid-item">✓ 256-bit SSL/TLS encryption</div>
+        <div class="grid-item">✓ AES-256 encryption at rest</div>
+        <div class="grid-item">✓ Multi-factor authentication</div>
+        <div class="grid-item">✓ Role-based access controls</div>
+        <div class="grid-item">✓ Regular security audits</div>
+        <div class="grid-item">✓ Penetration testing</div>
+        <div class="grid-item">✓ 24/7 monitoring</div>
+        <div class="grid-item">✓ Incident response procedures</div>
+      </div>
+      <div style="background: rgba(212, 165, 116, 0.1); border-left: 4px solid #d4a574; border-radius: 0 8px 8px 0; padding: 16px; margin-top: 24px;">
+        <p style="margin: 0; font-size: 14px;"><strong style="color: #d4a574;">Important:</strong> No method of transmission or storage is 100% secure. While we strive to protect your information, we cannot guarantee absolute security.</p>
+      </div>
+    </div>
+
+    <!-- 5. Your Rights -->
+    <div class="info-box">
+      <h2>5. Your Rights & Choices</h2>
+      <p>You have the following rights regarding your personal information:</p>
+      <ul>
+        <li><strong>Access:</strong> Request a copy of your data</li>
+        <li><strong>Correction:</strong> Update inaccurate information</li>
+        <li><strong>Deletion:</strong> Request data removal</li>
+        <li><strong>Portability:</strong> Export your data</li>
+        <li><strong>Opt-Out:</strong> Unsubscribe from marketing</li>
+        <li><strong>Object:</strong> Object to data processing</li>
+      </ul>
+      <p style="margin-top: 24px;">
+        <strong>To exercise these rights:</strong> Contact us at <a href="mailto:privacy@verido.com" style="color: #10b981; font-weight: 600;">privacy@verido.com</a>. We will respond within 30 days.
+      </p>
+    </div>
+
+    <!-- 6. Cookies & Tracking -->
+    <div class="content-section">
+      <h2>6. Cookies & Tracking Technologies</h2>
+      <p>We use cookies and similar technologies to enhance your experience:</p>
+      <ul>
+        <li><strong>Essential Cookies:</strong> Required for basic site functionality</li>
+        <li><strong>Performance Cookies:</strong> Help us understand usage patterns</li>
+        <li><strong>Functional Cookies:</strong> Remember your preferences</li>
+      </ul>
+    </div>
+
+    <!-- 7. Data Retention -->
+    <div class="content-section">
+      <h2>7. Data Retention</h2>
+      <p>
+        We retain your information for as long as necessary to provide services, comply with legal obligations, and resolve disputes. When no longer needed, we securely delete or anonymize data. Financial records may be retained for up to 7 years as required by law.
+      </p>
+    </div>
+
+    <!-- 8. International Transfers -->
+    <div class="content-section">
+      <h2>8. International Data Transfers</h2>
+      <p>
+        Your information may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards through standard contractual clauses and other lawful transfer mechanisms.
+      </p>
+    </div>
+
+    <!-- 9. Children's Privacy -->
+    <div class="content-section">
+      <h2>9. Children's Privacy</h2>
+      <p>
+        Our Services are not directed to individuals under 18 years of age. We do not knowingly collect personal information from children. If you become aware that a child has provided us with personal information, please contact us immediately.
+      </p>
+    </div>
+
+    <!-- 10. Policy Changes -->
+    <div class="content-section">
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. We will notify you of material changes by:</p>
+      <ul>
+        <li>Posting the updated policy with a new "Last Updated" date</li>
+        <li>Sending email notification to your registered address</li>
+        <li>Displaying a prominent notice in our application</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="dark-section">
+      <h2>Contact Us</h2>
+      <p>Have questions about this Privacy Policy? We're here to help.</p>
+      <div class="contact-box">
+        <p style="font-weight: 700; color: #d4a574; margin-bottom: 16px;">Verido Privacy Team</p>
+        <p style="margin-bottom: 8px;">
+          <span style="color: rgba(255, 255, 255, 0.6);">Privacy Inquiries:</span>
+          <a href="mailto:privacy@verido.com">privacy@verido.com</a>
+        </p>
+        <p style="margin-bottom: 8px;">
+          <span style="color: rgba(255, 255, 255, 0.6);">General Inquiries:</span>
+          <a href="mailto:info@verido.app">info@verido.app</a>
+        </p>
+        <p style="color: rgba(255, 255, 255, 0.6); margin: 0;">Response Time: Within 3-5 business days</p>
+      </div>
+    </div>
+
+    <!-- GDPR/CCPA -->
+    <div class="info-box">
+      <h2>Additional Rights for EU & California Residents</h2>
+      <h3>For EU/EEA Residents (GDPR)</h3>
+      <p>
+        If you are located in the European Union or European Economic Area, you have additional rights under GDPR, including the right to lodge a complaint with your local data protection authority.
+      </p>
+      <h3>For California Residents (CCPA)</h3>
+      <p>
+        California residents have the right to know what personal information is collected, request deletion, and opt-out of the sale of personal information (note: we do not sell your data).
+      </p>
+    </div>
+
+    <a href="/" class="back-button">← Back to Home</a>
+  </div>
+
+  <div class="footer">
+    <p><strong>Last Updated:</strong> February 16, 2026</p>
+    <p style="margin-top: 8px;">© 2026 Verido. All rights reserved.</p>
+  </div>
+</body>
+</html>

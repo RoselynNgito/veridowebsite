@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service | Verido</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #374151;
+      background: #ffffff;
+    }
+    
+    .header {
+      background: linear-gradient(135deg, #162F21 0%, #0a1810 100%);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    
+    .header h1 {
+      font-size: 48px;
+      font-weight: 900;
+      margin-bottom: 16px;
+      color: white;
+    }
+    
+    .header p {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.85);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    
+    .summary-box {
+      background: white;
+      border-left: 4px solid #d4a574;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 48px;
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .summary-box h2 {
+      font-size: 24px;
+      font-weight: 900;
+      color: #162F21;
+      margin-bottom: 24px;
+    }
+    
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+    
+    .summary-item {
+      display: flex;
+      gap: 12px;
+    }
+    
+    .summary-item strong {
+      color: #162F21;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 4px;
+    }
+    
+    .summary-item p {
+      font-size: 12px;
+      color: #6b7280;
+    }
+    
+    .content-section {
+      background: white;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 32px;
+      border: 1px solid #e5e7eb;
+    }
+    
+    .content-section h2 {
+      font-size: 28px;
+      font-weight: 900;
+      color: #162F21;
+      margin-bottom: 24px;
+    }
+    
+    .content-section h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #162F21;
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+    
+    .content-section p {
+      margin-bottom: 16px;
+      line-height: 1.7;
+    }
+    
+    .content-section ul {
+      list-style: none;
+      margin-bottom: 16px;
+    }
+    
+    .content-section li {
+      padding-left: 28px;
+      margin-bottom: 8px;
+      position: relative;
+    }
+    
+    .content-section li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #10b981;
+      font-weight: bold;
+    }
+    
+    .alert-box {
+      background: #fef2f2;
+      border-left: 4px solid #dc2626;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 24px 0;
+    }
+    
+    .alert-box strong {
+      color: #dc2626;
+      display: block;
+      margin-bottom: 8px;
+    }
+    
+    .info-box {
+      background: #f0fdf4;
+      border: 2px solid #10b981;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 24px 0;
+    }
+    
+    .dark-section {
+      background: linear-gradient(135deg, #162F21 0%, #0a1810 100%);
+      color: white;
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 32px;
+    }
+    
+    .dark-section h2 {
+      color: white;
+      margin-bottom: 24px;
+    }
+    
+    .dark-section p {
+      color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+    
+    .grid-item {
+      background: #f9fafb;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 12px;
+      font-size: 14px;
+    }
+    
+    .contact-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 24px;
+    }
+    
+    .contact-box a {
+      color: #d4a574;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+    
+    .back-button {
+      display: inline-block;
+      background: #162F21;
+      color: white;
+      padding: 12px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 32px 0;
+      transition: background 0.3s;
+    }
+    
+    .back-button:hover {
+      background: #0a1810;
+    }
+    
+    .footer {
+      background: #f9fafb;
+      padding: 32px 20px;
+      text-align: center;
+      margin-top: 64px;
+      border-top: 2px solid #e5e7eb;
+    }
+    
+    .footer p {
+      color: #6b7280;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Terms of Service</h1>
+    <p>Our agreement with you. Please read these terms carefully before using Verido's services.</p>
+  </div>
+
+  <div class="container">
+    <a href="/" class="back-button">← Back to Home</a>
+
+    <!-- Key Highlights -->
+    <div class="summary-box">
+      <h2>Key Things to Know</h2>
+      <div class="summary-grid">
+        <div class="summary-item">
+          <div>
+            <strong>Risk Assessment Tool</strong>
+            <p>Verido provides risk scores based on data analysis. You're responsible for all business decisions.</p>
+          </div>
+        </div>
+        <div class="summary-item">
+          <div>
+            <strong>Service "As Is"</strong>
+            <p>We provide services without warranties. Scores don't guarantee future behavior.</p>
+          </div>
+        </div>
+        <div class="summary-item">
+          <div>
+            <strong>You Own Your Data</strong>
+            <p>You retain ownership of all data you upload. We use it only to provide services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 1. Acceptance of Terms -->
+    <div class="content-section">
+      <h2>1. Acceptance of Terms</h2>
+      <p>
+        Welcome to Verido. These Terms of Service ("Terms") govern your access to and use of Verido's mobile application, website, and related services (collectively, the "Services"). By accessing or using our Services, you agree to be bound by these Terms.
+      </p>
+      
+      <div class="alert-box">
+        <strong>⚠️ PLEASE READ CAREFULLY</strong>
+        <p style="margin: 0; font-size: 14px;">If you do not agree to these Terms, you may not access or use our Services.</p>
+      </div>
+
+      <p>By creating an account, downloading our mobile application, or using any of our Services, you acknowledge that:</p>
+      <ul>
+        <li>You have read, understood, and agree to be bound by these Terms</li>
+        <li>You are at least 18 years old and have the legal capacity to enter into these Terms</li>
+        <li>If using on behalf of an organization, you have authority to bind that organization</li>
+      </ul>
+    </div>
+
+    <!-- 2. Description of Services -->
+    <div class="content-section">
+      <h2>2. Description of Services</h2>
+      <p>Verido provides a risk assessment platform designed for distribution networks, including but not limited to:</p>
+      <div class="grid-2">
+        <div class="grid-item">✓ Credit scoring and risk analysis</div>
+        <div class="grid-item">✓ Five specialized scoring systems</div>
+        <div class="grid-item">✓ Data analytics tools</div>
+        <div class="grid-item">✓ Mobile and web dashboard access</div>
+        <div class="grid-item">✓ Integration capabilities</div>
+        <div class="grid-item">✓ Reporting and monitoring tools</div>
+      </div>
+      <p>We reserve the right to modify, suspend, or discontinue any aspect of the Services at any time, with or without notice.</p>
+    </div>
+
+    <!-- 3. Account Registration & Security -->
+    <div class="info-box">
+      <h2>3. Account Registration & Security</h2>
+      
+      <h3>3.1 Account Creation</h3>
+      <p>To access certain features, you must create an account. You agree to:</p>
+      <ul>
+        <li>Provide truthful and accurate registration information</li>
+        <li>Maintain and update your information to keep it current</li>
+        <li>Not create multiple accounts for the same individual</li>
+      </ul>
+
+      <h3>3.2 Account Security</h3>
+      <p>You are responsible for maintaining the confidentiality of your account credentials:</p>
+      <ul>
+        <li>Use a strong, unique password</li>
+        <li>Enable multi-factor authentication when available</li>
+        <li>Notify us immediately of any unauthorized access</li>
+        <li>Not share your account credentials with others</li>
+      </ul>
+    </div>
+
+    <!-- 4. Acceptable Use -->
+    <div class="content-section">
+      <h2>4. Acceptable Use Policy</h2>
+      <p>You agree NOT to:</p>
+      <ul>
+        <li>Violate any applicable laws or regulations</li>
+        <li>Infringe on intellectual property rights</li>
+        <li>Upload malicious code or viruses</li>
+        <li>Attempt to gain unauthorized access to our systems</li>
+        <li>Interfere with or disrupt the Services</li>
+        <li>Use the Services for fraudulent purposes</li>
+        <li>Reverse engineer or attempt to extract source code</li>
+        <li>Resell or redistribute the Services without permission</li>
+      </ul>
+    </div>
+
+    <!-- 5. User Data & Content -->
+    <div class="content-section">
+      <h2>5. User Data & Content</h2>
+      
+      <h3>5.1 Your Data Ownership</h3>
+      <p>
+        You retain all ownership rights to the data you upload to our Services. By uploading data, you grant Verido a limited license to use, process, and analyze that data solely to provide the Services.
+      </p>
+
+      <h3>5.2 Data Accuracy</h3>
+      <p>
+        You are responsible for ensuring the accuracy, quality, and legality of the data you provide. You warrant that you have the necessary rights and permissions to upload and use the data.
+      </p>
+
+      <h3>5.3 Data Backup</h3>
+      <p>
+        While we implement backup procedures, you are responsible for maintaining your own backup copies of your data.
+      </p>
+    </div>
+
+    <!-- 6. Intellectual Property -->
+    <div class="content-section">
+      <h2>6. Intellectual Property Rights</h2>
+      <p>
+        The Services, including all software, algorithms, designs, text, graphics, and other content (excluding your uploaded data), are owned by Verido and protected by intellectual property laws.
+      </p>
+      <p>
+        You are granted a limited, non-exclusive, non-transferable license to access and use the Services for your internal business purposes only.
+      </p>
+    </div>
+
+    <!-- 7. Payment & Billing -->
+    <div class="content-section">
+      <h2>7. Payment Terms & Billing</h2>
+      
+      <h3>7.1 Fees</h3>
+      <p>
+        Certain features of the Services require payment of fees. You agree to pay all applicable fees as described in your subscription plan.
+      </p>
+
+      <h3>7.2 Billing</h3>
+      <ul>
+        <li>Fees are billed in advance on a recurring basis (monthly or annually)</li>
+        <li>All fees are non-refundable except as required by law</li>
+        <li>We may change fees with 30 days' notice</li>
+        <li>Failure to pay may result in service suspension or termination</li>
+      </ul>
+
+      <h3>7.3 Taxes</h3>
+      <p>
+        Fees do not include applicable taxes. You are responsible for all taxes associated with your purchase.
+      </p>
+    </div>
+
+    <!-- 8. Term & Termination -->
+    <div class="content-section">
+      <h2>8. Term & Termination</h2>
+      
+      <h3>8.1 Term</h3>
+      <p>
+        These Terms remain in effect while you use the Services.
+      </p>
+
+      <h3>8.2 Termination by You</h3>
+      <p>
+        You may terminate your account at any time by contacting us at info@verido.app.
+      </p>
+
+      <h3>8.3 Termination by Us</h3>
+      <p>
+        We may suspend or terminate your access immediately if you:
+      </p>
+      <ul>
+        <li>Breach these Terms</li>
+        <li>Fail to pay applicable fees</li>
+        <li>Engage in fraudulent or illegal activity</li>
+        <li>Pose a security risk to our Services</li>
+      </ul>
+
+      <h3>8.4 Effect of Termination</h3>
+      <p>
+        Upon termination, your right to use the Services ceases immediately. We may delete your data 30 days after termination unless legally required to retain it.
+      </p>
+    </div>
+
+    <!-- 9. Disclaimers -->
+    <div class="alert-box">
+      <strong>9. Disclaimers</strong>
+      <p style="margin-bottom: 12px;">
+        THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED.
+      </p>
+      <p style="margin-bottom: 12px;">
+        <strong>We specifically disclaim:</strong>
+      </p>
+      <ul style="list-style: disc; padding-left: 20px; margin: 0;">
+        <li>Warranties of merchantability, fitness for a particular purpose, and non-infringement</li>
+        <li>Any guarantee that the Services will be uninterrupted, error-free, or secure</li>
+        <li>Any warranty regarding the accuracy or reliability of risk scores</li>
+        <li>Responsibility for business decisions made based on our Services</li>
+      </ul>
+    </div>
+
+    <!-- 10. Limitation of Liability -->
+    <div class="content-section">
+      <h2>10. Limitation of Liability</h2>
+      <p>
+        TO THE MAXIMUM EXTENT PERMITTED BY LAW, VERIDO SHALL NOT BE LIABLE FOR:
+      </p>
+      <ul>
+        <li>Indirect, incidental, special, consequential, or punitive damages</li>
+        <li>Loss of profits, revenue, data, or business opportunities</li>
+        <li>Service interruptions or data loss</li>
+        <li>Business decisions made based on risk scores</li>
+      </ul>
+      <p>
+        Our total liability shall not exceed the amount you paid us in the 12 months preceding the claim, or $100, whichever is greater.
+      </p>
+    </div>
+
+    <!-- 11. Indemnification -->
+    <div class="content-section">
+      <h2>11. Indemnification</h2>
+      <p>
+        You agree to indemnify and hold harmless Verido from any claims, damages, losses, or expenses (including legal fees) arising from:
+      </p>
+      <ul>
+        <li>Your use of the Services</li>
+        <li>Your violation of these Terms</li>
+        <li>Your violation of any laws or third-party rights</li>
+        <li>Your uploaded data or content</li>
+      </ul>
+    </div>
+
+    <!-- 12. Dispute Resolution -->
+    <div class="content-section">
+      <h2>12. Dispute Resolution</h2>
+      
+      <h3>12.1 Governing Law</h3>
+      <p>
+        These Terms are governed by the laws of Kenya, without regard to conflict of law principles.
+      </p>
+
+      <h3>12.2 Arbitration</h3>
+      <p>
+        Any disputes shall be resolved through binding arbitration in Nairobi, Kenya, except that either party may seek injunctive relief in court.
+      </p>
+
+      <h3>12.3 Class Action Waiver</h3>
+      <p>
+        You agree to resolve disputes on an individual basis and waive any right to participate in class actions.
+      </p>
+    </div>
+
+    <!-- 13. General Provisions -->
+    <div class="content-section">
+      <h2>13. General Provisions</h2>
+      
+      <h3>13.1 Changes to Terms</h3>
+      <p>
+        We may modify these Terms at any time. Material changes will be notified via email or in-app notice. Continued use after changes constitutes acceptance.
+      </p>
+
+      <h3>13.2 Entire Agreement</h3>
+      <p>
+        These Terms constitute the entire agreement between you and Verido regarding the Services.
+      </p>
+
+      <h3>13.3 Severability</h3>
+      <p>
+        If any provision is found unenforceable, the remaining provisions remain in effect.
+      </p>
+
+      <h3>13.4 No Waiver</h3>
+      <p>
+        Our failure to enforce any right or provision does not constitute a waiver.
+      </p>
+
+      <h3>13.5 Assignment</h3>
+      <p>
+        You may not assign these Terms without our consent. We may assign these Terms without restriction.
+      </p>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="dark-section">
+      <h2>14. Contact Information</h2>
+      <p>For questions about these Terms, contact us:</p>
+      <div class="contact-box">
+        <p style="font-weight: 700; color: #d4a574; margin-bottom: 16px;">Verido Legal Team</p>
+        <p style="margin-bottom: 8px;">
+          <span style="color: rgba(255, 255, 255, 0.6);">Legal Inquiries:</span>
+          <a href="mailto:legal@verido.com">legal@verido.com</a>
+        </p>
+        <p style="margin-bottom: 8px;">
+          <span style="color: rgba(255, 255, 255, 0.6);">General Support:</span>
+          <a href="mailto:info@verido.app">info@verido.app</a>
+        </p>
+        <p style="color: rgba(255, 255, 255, 0.6); margin: 0;">Nairobi, Kenya</p>
+      </div>
+    </div>
+
+    <a href="/" class="back-button">← Back to Home</a>
+  </div>
+
+  <div class="footer">
+    <p><strong>Last Updated:</strong> February 16, 2026</p>
+    <p style="margin-top: 8px;">© 2026 Verido. All rights reserved.</p>
+  </div>
+</body>
+</html>

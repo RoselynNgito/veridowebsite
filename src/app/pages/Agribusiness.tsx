@@ -101,12 +101,13 @@ export default function Agribusiness() {
               
               <p className="mt-4 text-xs text-[rgba(255,255,255,0.6)]">
                 By downloading, you agree to our{" "}
-                <Link to="/terms-of-service" className="underline hover:text-[#d4a574] transition-colors">
-  Terms of Service
-</Link>
-<Link to="/privacy-policy" className="underline hover:text-[#d4a574] transition-colors">
-  Privacy Policy
-</Link>
+                <a href="/terms-of-service.html" className="underline hover:text-[#d4a574] transition-colors">
+                  Terms of Service
+                </a>{" "}
+                and{" "}
+                <a href="/privacy-policy.html" className="underline hover:text-[#d4a574] transition-colors">
+                  Privacy Policy
+                </a>
               </p>
             </motion.div>
 
@@ -768,12 +769,13 @@ export default function Agribusiness() {
             
             <p className="mt-3 text-xs text-gray-500">
               By downloading, you agree to our{" "}
-              <Link to="/terms-of-service" className="underline hover:text-[#d4a574] transition-colors">
-  Terms of Service
-</Link>
-<Link to="/privacy-policy" className="underline hover:text-[#d4a574] transition-colors">
-  Privacy Policy
-</Link>
+              <a href="/terms-of-service.html" className="underline hover:text-[#d4a574] transition-colors">
+                Terms of Service
+              </a>{" "}
+              and{" "}
+              <a href="/privacy-policy.html" className="underline hover:text-[#d4a574] transition-colors">
+                Privacy Policy
+              </a>
             </p>
           </motion.div>
         </div>
