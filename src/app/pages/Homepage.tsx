@@ -913,6 +913,16 @@ export default function Homepage() {
             <p className="mt-5 text-sm text-[rgba(255,255,255,0.6)]">
               Available for Android • Free to download
             </p>
+            
+            <p className="mt-3 text-xs text-[rgba(255,255,255,0.5)]">
+              By downloading, you agree to our{" "}
+              <Link to="/terms-of-service" className="...">
+  Terms of Service
+</Link>
+<Link to="/privacy-policy" className="...">
+  Privacy Policy
+</Link>
+            </p>
           </motion.div>
         </div>
       </section>

@@ -71,21 +71,34 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#privacy" className="text-gray-300 hover:text-white transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
+  <Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">
+    Privacy Policy
+  </Link>
+</li>
               <li>
-                <a href="#terms" className="text-gray-300 hover:text-white transition-colors">
-                  Terms of Service
-                </a>
-              </li>
+  <Link to="/terms-of-service" className="text-gray-300 hover:text-white transition-colors">
+    Terms of Service
+  </Link>
+</li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm text-gray-400">
-          © {new Date().getFullYear()} Verido. All rights reserved.
+        <div className="border-t border-gray-700 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-gray-400">
+              © {new Date().getFullYear()} Verido. All rights reserved.
+            </p>
+            <div className="flex items-center gap-4 text-xs text-gray-500">
+              <Link to="/privacy-policy" className="hover:text-[#d4a574] transition-colors">
+                Privacy Policy
+              </Link>
+              <span>•</span>
+              <Link to="/terms-of-service" className="hover:text-[#d4a574] transition-colors">
+                Terms of Service
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
