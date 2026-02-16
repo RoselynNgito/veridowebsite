@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createHashRouter } from "react-router";
 import Homepage from "./pages/Homepage";
 import Agribusiness from "./pages/Agribusiness";
 import Donors from "./pages/Donors";
@@ -33,7 +33,7 @@ function NotFound() {
   );
 }
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     element: (
