@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { ChevronDown, Menu, X, Store, Users, Building2 } from "lucide-react";
+import { ChevronDown, Menu, X, Lock, ArrowRight, Store, Users, Building2 } from "lucide-react";
 import veridoLogo from "../../assets/Verido_Green_transparent.png";
 
 const industries = [
@@ -181,6 +181,22 @@ export default function Navigation() {
                 Contact
                 <span className="absolute bottom-1 left-4 right-4 h-0.5 bg-[#0a4521] opacity-0 transition-all duration-300 group-hover:opacity-100" />
               </button>
+              {/* SPACER */}
+              <div className="w-2"></div>
+
+              {/* Partners Login Button - FAR RIGHT */}
+              <motion.a
+                href="https://admin.verido.app/signin"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-5 py-2.5 border-2 border-white text-white font-semibold rounded-lg bg-[#162F21] hover:bg-white hover:text-[#162F21] hover:border-[#162F21] transition-all duration-300 shadow-md hover:shadow-lg group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Lock />
+                <span>Partners Login</span>
+                <ArrowRight />
+              </motion.a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -280,6 +296,20 @@ export default function Navigation() {
                 >
                   Contact
                 </button>
+                {/* Divider */}
+                <div className="border-t border-gray-200" />
+
+                {/* Partners Login - Mobile */}
+                <a
+                  href="https://admin.verido.app/signin"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2 px-4 py-3.5 bg-[#162F21] text-white font-bold rounded-xl transition-all hover:bg-[#1a3a28] shadow-lg"
+                >
+                  <Lock />
+                  <span>Partners Login</span>
+                  <ArrowRight />
+                </a>
               </div>
             </motion.div>
           )}
